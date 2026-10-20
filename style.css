@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom, #7fcdf5 0%, #bfe8fb 70%, #5cb85c 70%, #3f9b3f 100%);
+}
+
+.card {
+    width: 380px;
+    background-color: #ffe14d;
+    border: 5px solid #111;
+    border-radius: 18px;
+    box-shadow: 8px 8px 0 #111;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card-header {
+    background-color: #2f6fd1;
+    color: #fff;
+    border: 4px solid #111;
+    border-radius: 12px;
+    text-align: center;
+    padding: 8px;
+}
+.card-header h1 {
+    margin: 0;
+    font-size: 1.9em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #111;
+}
+.card-header p {
+    margin: 2px 0 0;
+    font-size: 0.8em;
+}
+
+.screen {
+    background-color: #fff;
+    border: 4px solid #111;
+    border-radius: 12px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pokemon-display img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 3px solid #111;
+    border-radius: 12px;
+}
+
+.pokemon-details {
+    flex: 1;
+    text-align: left;
+}
+.pokemon-name {
+    margin: 0 0 4px;
+    color: #111;
+    font-size: 1.2em;
+}
+.pokemon-id, .pokemon-type {
+    margin: 2px 0;
+    font-size: 0.85em;
+    color: #2f6fd1;
+    font-weight: bold;
+}
+.pokemon-description {
+    margin: 6px 0 0;
+    font-size: 0.8em;
+    color: #333;
+    max-height: 90px;
+    overflow-y: auto;
+}
+.pokemon-description.error {
+    color: #d12222;
+    font-weight: bold;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: #111;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+.btn-blue   { background-color: #7fcdf5; }
+.btn-yellow { background-color: #ff8a3d; }
+.btn-green  { background-color: #7be07b; }
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.nav-buttons .btn { flex: 1; }
+
+.search-area {
+    display: flex;
+    gap: 8px;
+}
+.pokemon-input {
+    flex: 1;
+    font-family: inherit;
+    font-size: 0.9em;
+    padding: 6px 8px;
+    border: 3px solid #111;
+    border-radius: 10px;
+    background-color: #fff;
+}

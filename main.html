@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quahog Dex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h1>Family Dex</h1>
+        </div>
+
+        <div class="screen">
+            <div class="pokemon-display">
+                <img id="sprite" src="" alt="Personagem">
+            </div>
+            <div class="pokemon-details">
+                <h2 class="pokemon-name" id="nome">Nome</h2>
+                <p class="pokemon-id" id="numero">Nº</p>
+                <p class="pokemon-type" id="tipo">Papel:</p>
+                <p class="pokemon-description" id="desc">Descrição</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn btn-blue" id="anterior">◀ Anterior</button>
+            <button class="btn btn-yellow" id="aleatorio"> Aleatório</button>
+            <button class="btn btn-blue" id="proximo">Próximo ▶</button>
+        </div>
+
+        <div class="search-area">
+            <input type="text" id="buscar_nome" placeholder="Nome do personagem" class="pokemon-input">
+            <button onclick="buscarPersonagem()" id="buscar" class="btn btn-green">Buscar</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
